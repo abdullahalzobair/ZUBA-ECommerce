@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./footer.css";
 import footer_logo from "../../assets/logo_big.png";
 import instagram_icon from "../../assets/instagram_icon.png";
@@ -7,12 +7,12 @@ import whatsapp_icon from "../../assets/whatsapp_icon.png";
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      <div className='footer-logo'>
+    <div className="footer">
+      <div className="footer-logo">
         <img src={footer_logo} alt="" />
         <p>ZUBA</p>
       </div>
-      <ul className='footer-links'>
+      <ul className="footer-links">
         <li>Company</li>
         <li>Products</li>
         <li>Offers</li>
@@ -32,10 +32,13 @@ const Footer = () => {
       </div>
       <div className="footer-copyright">
         <hr />
-        <p>Copyright @ 2023 -All Right Reserved.</p>
+        <p>
+          Copyright &copy; {new Date().getFullYear()}. ZUBA | All rights are
+          reserved.
+        </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
